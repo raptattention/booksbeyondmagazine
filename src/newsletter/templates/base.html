@@ -1,10 +1,8 @@
 {% load bootstrap3 %}
 {% bootstrap_css %}
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-
 {% bootstrap_javascript %}
-
-<nav class="navbar navbar-default navbar-top">
+<!-- Fixed navbar -->
+<nav class="navbar navbar-default navbar-fixed-top">
   <div class="container">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -42,10 +40,16 @@
   </div>
 </nav>
 
-<h1>{{ title }}</h1>
+<div class="container">
 
-<form method='POST' action=''>{% csrf_token %}
-  {{ form.as_p }}
-  <input type='submit' value='Sign Up' />
+  <!-- Main component for a primary marketing message or call to action -->
+  <div class="jumbotron">
+    <h1>Navbar example</h1>
+    <p>This example is a quick exercise to illustrate how the default, static and fixed to top navbar work. It includes the responsive CSS and HTML, so it also adapts to your viewport and device.</p>
+    <p>To see the difference between static and fixed top navbars, just scroll.</p>
+    <p>
+      <a class="btn btn-lg btn-primary" href="../../components/#navbar" role="button">View navbar docs &raquo;</a>
+    </p>
+  </div>
 
-</form>
+</div> <!-- /container -->

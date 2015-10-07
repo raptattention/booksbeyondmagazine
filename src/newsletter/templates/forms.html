@@ -1,7 +1,13 @@
+{% load staticfiles %}
+{% load bootstrap3 %}
+{% bootstrap_css %}
+{% bootstrap_javascript %}
+
 <h1>Forms</h1>
 
 <form method='POST' action=''>{% csrf_token %}
   {{ form.as_p }}
+  <!-- <img src="{% static "img/Small-mario.png" %}"> -->
   <input type='submit' value='Submit' />
 
 </form>
