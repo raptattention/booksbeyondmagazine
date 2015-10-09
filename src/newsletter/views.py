@@ -32,3 +32,21 @@ def contact(request):
 		"form": form
 	}
 	return render(request,"forms.html", context)
+
+def about(request):
+	context={
+
+	}
+	return render(request, "about.html", context)
+
+def newsletter(request):
+	context={
+	
+	}
+	return render(request, "newsletter.html", context)
+
+def archive(request):
+	context={
+	
+	}
+	return render(request, "archive.html", context)
