@@ -1,13 +1,14 @@
+{% load staticfiles %}
 <nav class="navbar navbar-default navbar-top">
-  <div class="container">
     <div class="navbar-header">
+      <a class="navbar-brand" style="padding-top: 5px" href="http://www.booksnbeyondreading.com/"><img src="{% static "img/logo.png" %}" style="display: inline-block; height: 35px; width: 35px;"></a>
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
         <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">Books Beyond</a>
+      <a class="navbar-brand" href="http://www.booksnbeyondreading.com/">Books Beyond</a>
     </div>
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav navbar-left">
@@ -30,5 +31,4 @@
         </li>
       </ul>
     </div><!--/.nav-collapse -->
-  </div>
 </nav>

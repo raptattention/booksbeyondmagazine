@@ -3,3 +3,22 @@ body {
 	background: url(../img/background.jpg);
 	font-family: 'Garamond', 'chelsea market',fantasy;
 }
+
+.jumbotron {
+	margin-top: 10px;
+	background: white;
+	border: 2px solid skyblue;
+}
+
+.jumbotron h1 {
+	margin-top: 0;
+	margin-bottom: 30px;
+}
+
+.navbar {
+	margin-top: 10px;
+	margin-left: 5px;
+	margin-right: 5px;
+	border: 2px solid skyblue;
+	background: white;
+}
