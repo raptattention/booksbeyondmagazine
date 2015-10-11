@@ -1,7 +1,12 @@
+@import url(https://fonts.googleapis.com/css?family=Chelsea+Market);
+
 body {
 	text-align: center;
-	background: url(../img/background.jpg);
-	font-family: 'Garamond', 'chelsea market',fantasy;
+	background-image: url(../img/background.00_jpg_srz); 
+	background-size: cover; 
+	background-position: 50% 0%; 
+	background-repeat: no-repeat;
+	font-family: 'Chelsea Market',fantasy;
 }
 
 .jumbotron {
@@ -21,4 +26,8 @@ body {
 	margin-right: 5px;
 	border: 2px solid skyblue;
 	background: white;
+}
+
+.contactinfo {
+	width: 49%;
 }

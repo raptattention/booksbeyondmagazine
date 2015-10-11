@@ -24,6 +24,7 @@ urlpatterns = [
     url(r'^contact/$', "newsletter.views.contact", name='contact'),
     url(r'^newsletter/$', "newsletter.views.newsletter", name='newsletter'),
     url(r'^archive/$', "newsletter.views.archive", name='archive'),
+    url(r'^bookbearletters/$', "newsletter.views.bookbearletters", name='bookbearletters'),
     url(r'^admin/', include(admin.site.urls)),
 ] 
 

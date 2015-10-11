@@ -3,7 +3,8 @@ from django import forms
 from .models import Signup
 
 class ContactForm(forms.Form):
-	fullname = forms.CharField(required=False)
+	fullname = forms.CharField()
+	phone = forms.CharField()
 	email = forms.EmailField()
 	message = forms.CharField()
 

@@ -1,0 +1,9 @@
+#navbar li a{
+  color: #27A8C7;
+  transition: color 0.4s ease 0s;
+}
+
+#navbar li a:hover{
+	color: #9711A3;
+}
+

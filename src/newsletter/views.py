@@ -50,3 +50,9 @@ def archive(request):
 	
 	}
 	return render(request, "archive.html", context)
+
+def bookbearletters(request):
+	context={
+	
+	}
+	return render(request, "bookbearletters.html", context)
