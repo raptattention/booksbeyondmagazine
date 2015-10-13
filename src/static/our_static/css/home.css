@@ -7,6 +7,7 @@ body {
 	background-position: 50% 0%; 
 	background-repeat: no-repeat;
 	font-family: 'Chelsea Market',fantasy;
+	color: grey;
 }
 
 .jumbotron {
@@ -15,19 +16,41 @@ body {
 	border: 2px solid skyblue;
 }
 
-.jumbotron h1 {
+.jumbotron h2 {
 	margin-top: 0;
 	margin-bottom: 30px;
-}
-
-.navbar {
-	margin-top: 10px;
-	margin-left: 5px;
-	margin-right: 5px;
-	border: 2px solid skyblue;
-	background: white;
+	color: #27A8C7;
 }
 
 .contactinfo {
 	width: 49%;
+	display: inline-block;
+	vertical-align: top;
+	text-align: left;
+}
+
+.formField {
+	display: block;
+	margin-bottom: 5px;
+}
+
+input {
+	width: 100%;
+	background-color: rgba(227, 180, 232, 1);
+	border: 0px solid rgba(151, 17, 163, 1);
+	color: white;
+}
+
+textarea {
+	width: 100%;
+	background-color: rgba(227, 180, 232, 1);
+	border: 0px solid rgba(151, 17, 163, 1);
+	color: white;
+}
+
+.submitButton {
+	float: right;
+	color: white;
+	background-color: rgba(39, 168, 199, 1);
+	max-width: 15%;
 }

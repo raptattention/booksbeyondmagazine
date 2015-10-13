@@ -1,12 +1,18 @@
 from django import forms
 
 from .models import Signup
+from .models import Contact
 
-class ContactForm(forms.Form):
-	fullname = forms.CharField()
-	phone = forms.CharField()
-	email = forms.EmailField()
-	message = forms.CharField()
+class ContactForm(forms.ModelForm):
+	class Meta:
+		model = Contact
+		fields = ['fullname','phone_number','email','message']
+		widgets={
+		 	"fullname":forms.TextInput(attrs={'placeholder':'Fullname'}),
+		 	"phone_number":forms.TextInput(attrs={'placeholder':'Phone Number'}),
+		 	"email":forms.TextInput(attrs={'placeholder':'Email'}),
+		 	"message":forms.Textarea(attrs={'placeholder':'Message'}),
+		 	} 
 
 class SignupForm(forms.ModelForm):
 	class Meta:
