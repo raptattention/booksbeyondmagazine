@@ -22,11 +22,26 @@ body {
 	color: #27A8C7;
 }
 
+.jumbotron h3 {
+	margin-top: 0;
+	margin-bottom: 20px;
+	color: #27A8C7;
+}
+
+.jumbotron h5 {
+	color: purple;
+	margin-top: 0;
+	margin-bottom: 20px;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
 .contactinfo {
 	width: 49%;
 	display: inline-block;
 	vertical-align: top;
 	text-align: left;
+	float: center;
 }
 
 .formField {

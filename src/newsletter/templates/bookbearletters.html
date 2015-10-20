@@ -7,3 +7,22 @@
 {% bootstrap_javascript %}
 
 {% include 'base.html' %}
+
+<div class="jumbotron">
+  	<h3>Send a Letter to Book Bear</h3>
+  	<h5>Feel free to send an email to Book Bear! He's always to glad to hear from the children! Maybe he'll even put your email up in next month's newsletter!</h5>
+  	<div class="contactinfo">
+			<form method='POST' action=''>{% csrf_token %}
+				<div class="formField">
+			  	{{ form.fullname }}
+			  </div>
+			  <div class="formField">
+			  	{{ form.email }}
+			  </div>
+			  <div class="formField">
+			  	{{ form.message }}
+			  </div>
+			  <input class="submitButton" type='submit' value='Send' />
+			</form>
+		</div>
+  </div>

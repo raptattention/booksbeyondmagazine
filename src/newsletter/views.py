@@ -1,6 +1,7 @@
 from django.shortcuts import render
+from django.core.mail import send_mail
 
-from .forms import ContactForm, SignupForm
+from .forms import ContactForm, SignupForm, BookBearLetterForm
 # Create your views here.
 def home(request):
 	title = "Welcome"
@@ -25,9 +26,6 @@ def home(request):
 
 def contact(request):
 	form = ContactForm(request.POST or None)
-	if form.is_valid():
-		for key, value in form.cleaned_data.iteritems():
-			print key, value
 	context = {
 		"form": form
 	}
@@ -52,7 +50,14 @@ def archive(request):
 	return render(request, "archive.html", context)
 
 def bookbearletters(request):
+	form = BookBearLetterForm(request.POST or None)
+	if form.is_valid():
+		instance = form.save(commit=False)
+		print instance.fullname
+		print instance.message
+		print instance.email
+		send_mail('Letter from '+instance.fullname,  instance.message, instance.email, ['klaw1794@gmail.com'], fail_silently=False)
 	context={
-	
+		"form": form
 	}
 	return render(request, "bookbearletters.html", context)

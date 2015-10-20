@@ -18,6 +18,11 @@ class Contact(models.Model):
 	email = models.EmailField()
 	message = models.TextField()
 
+class BookBearLetter(models.Model):
+	fullname = models.CharField(max_length=120,blank=False,null=True)
+	email = models.EmailField()
+	message = models.TextField()
+
 class Newsletter(models.Model):
 	title = models.CharField(max_length=200,blank=True,null=True)
 	maintext = models.TextField(blank=True,null=True)

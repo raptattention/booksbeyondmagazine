@@ -2,6 +2,7 @@ from django import forms
 
 from .models import Signup
 from .models import Contact
+from .models import BookBearLetter
 
 class ContactForm(forms.ModelForm):
 	class Meta:
@@ -12,7 +13,17 @@ class ContactForm(forms.ModelForm):
 		 	"phone_number":forms.TextInput(attrs={'placeholder':'Phone Number'}),
 		 	"email":forms.TextInput(attrs={'placeholder':'Email'}),
 		 	"message":forms.Textarea(attrs={'placeholder':'Message'}),
-		 	} 
+		 	}
+
+class BookBearLetterForm(forms.ModelForm):
+	class Meta:
+		model = Contact
+		fields = ['fullname','email','message']
+		widgets={
+		 	"fullname":forms.TextInput(attrs={'placeholder':'Fullname'}),
+		 	"email":forms.TextInput(attrs={'placeholder':'Email'}),
+		 	"message":forms.Textarea(attrs={'placeholder':'Message'}),
+		 	}  
 
 class SignupForm(forms.ModelForm):
 	class Meta:
